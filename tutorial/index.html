@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>full text search</title>
+</head>
+<script src="../launcher/socket.io.js"></script>
+<script src="../launcher/ksanalauncher.min.js"></script>
+<style>
+	hl {background:red; color:yellow}
+</style>
+
+<div id="settings" dbname='daodejin' grouptag="chapter"/>
+<body>
+	 <br/>
+	 <p align="center"><span id="apptitle">Full Text Search</span></p>
+
+<div class="mainview row-fluid">
+	 <p align="center">
+	  <input value="聖人" type="text" id="tofind" class="input-large search-query"></input>
+  	<button id="btntofind" style="visibility:hidden">搜尋</button>
+ 	 </p>
+<div class="ftcandidates"></div>
+</div>
+
+<script id="fulltexttemplate" type="html-template">
+	<%=nslot%><span class="explanation"><%=exp%></span><hr/>
+</script>
+
+</body>
+</html>

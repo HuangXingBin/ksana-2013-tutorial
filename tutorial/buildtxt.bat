@@ -1,0 +1,1 @@
+node ../ksanadb/buildydb4.proj.js daodejin.txt
